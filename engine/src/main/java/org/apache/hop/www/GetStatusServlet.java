@@ -263,7 +263,7 @@ public class GetStatusServlet extends BaseHttpServlet implements IHopServerPlugi
           out.print( "<td onMouseEnter=\"mouseEnterFunction( this, '" + tdClass + "' )\" "
             + "onMouseLeave=\"mouseLeaveFunction( this, '" + tdClass + "' )\" "
             + "onClick=\"clickFunction( this, '" + tdClass + "' )\" "
-            + "id=\"cellTableLastCell_" + i + "\" class=\"cellTableCell cellTableLastColumn " + tdClass + "\">" + (pipeline.getExecutionStartDate() == null ? "-" : dateStr.substring( dateStr.indexOf( ' ' ) )) + "</td>" );
+            + "id=\"cellTableLastCell_" + i + "\" class=\"cellTableCell cellTableLastColumn " + tdClass + "\">" + ( pipeline.getExecutionStartDate() == null ? "-" : dateStr.substring( dateStr.indexOf( ' ' ) ) ) + "</td>" );
           out.print( "</tr>" );
         }
         out.print( "</table></table>" );
